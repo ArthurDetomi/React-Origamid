@@ -1,11 +1,9 @@
-import EffectMain from "./components/effect/EffectMain";
-import Main from "./components/state/exercicios/Main";
+import ExercicioEffect from "./components/effect/exercicio/ExercicioEffect";
 
 function App() {
   return (
     <div>
-      {/*<Aula1 />*/}
-      <EffectMain />
+      <ExercicioEffect />
     </div>
   );
 }
