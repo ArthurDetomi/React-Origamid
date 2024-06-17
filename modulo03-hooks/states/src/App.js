@@ -1,9 +1,8 @@
-import ExercicioEffect from "./components/effect/exercicio/ExercicioEffect";
-
+import UseRefAula2 from "./components/useRef/UseRefAula2";
 function App() {
   return (
     <div>
-      <ExercicioEffect />
+      <UseRefAula2 />
     </div>
   );
 }
