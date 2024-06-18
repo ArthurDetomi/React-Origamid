@@ -1,8 +1,9 @@
-import UseRefAula2 from "./components/useRef/UseRefAula2";
+import UseCallBackAula from "./components/useMemoAndCallBack/UseCallBackAula";
+
 function App() {
   return (
     <div>
-      <UseRefAula2 />
+      <UseCallBackAula />
     </div>
   );
 }
