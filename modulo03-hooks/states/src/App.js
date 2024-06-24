@@ -1,9 +1,11 @@
-import UseCallBackAula from "./components/useMemoAndCallBack/UseCallBackAula";
+import UserContext from "./components/useContext/UserContext";
+import Produto from "./components/useContext/Produto";
+import AppContext from "./components/useContext/AppContext";
 
 function App() {
   return (
     <div>
-      <UseCallBackAula />
+      <AppContext />
     </div>
   );
 }
