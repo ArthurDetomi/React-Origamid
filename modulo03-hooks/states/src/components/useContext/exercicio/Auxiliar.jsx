@@ -7,6 +7,8 @@ const Auxiliar = () => {
 
   return (
     <div>
+      {global.dados &&
+        global.dados.map((produto) => <p key={produto.nome}>{produto.nome}</p>)}
       <button onClick={() => global.limparDados()}>botao</button>
     </div>
   );
