@@ -1,11 +1,9 @@
-import UserContext from "./components/useContext/UserContext";
-import Produto from "./components/useContext/Produto";
-import AppContext from "./components/useContext/AppContext";
+import ExercicioContext from "./components/useContext/exercicio/ExercicioContext";
 
 function App() {
   return (
     <div>
-      <AppContext />
+      <ExercicioContext />
     </div>
   );
 }
