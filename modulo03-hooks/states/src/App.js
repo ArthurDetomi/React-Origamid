@@ -1,9 +1,9 @@
-import ExercicioContext from "./components/useContext/exercicio/ExercicioContext";
+import AppCustomHook from "./components/customHooks/AppCustomHook";
 
 function App() {
   return (
     <div>
-      <ExercicioContext />
+      <AppCustomHook />
     </div>
   );
 }
