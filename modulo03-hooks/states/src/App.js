@@ -1,9 +1,10 @@
 import AppCustomHook from "./components/customHooks/AppCustomHook";
+import SegundaAulaCustomHook from "./components/customHooks/aula02/SegundaAulaCustomHook";
 
 function App() {
   return (
     <div>
-      <AppCustomHook />
+      <SegundaAulaCustomHook />
     </div>
   );
 }
