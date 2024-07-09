@@ -48,18 +48,16 @@ const formFields = [
   },
 ];
 
+const usuarioInitial = formFields.reduce((acc, field) => {
+  console.log(acc);
+  return {
+    ...acc,
+    [field.id]: "",
+  };
+}, {});
+
 const ExercOne = () => {
-  const [usuario, setUsuario] = React.useState({
-    nome: "",
-    email: "",
-    senha: "",
-    cep: "",
-    rua: "",
-    numero: "",
-    bairro: "",
-    cidade: "",
-    estado: "",
-  });
+  const [usuario, setUsuario] = React.useState(usuarioInitial);
 
   const [response, setResponse] = React.useState(null);
 
@@ -83,17 +81,7 @@ const ExercOne = () => {
       setResponse(response);
     });
 
-    setUsuario({
-      nome: "",
-      email: "",
-      senha: "",
-      cep: "",
-      rua: "",
-      numero: "",
-      bairro: "",
-      cidade: "",
-      estado: "",
-    });
+    setUsuario(usuarioInitial);
   };
 
   return (
