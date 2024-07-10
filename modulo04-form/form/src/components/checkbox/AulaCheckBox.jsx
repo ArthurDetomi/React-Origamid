@@ -1,5 +1,7 @@
 import React from "react";
 
+const coresArray = ["azul", "roxo", "laranja", "verde", "vermelho", "cinza"];
+
 const AulaCheckBox = () => {
   const [termos, setTermos] = React.useState(false);
   const [cores, setCores] = React.useState(["vermelho"]);
@@ -29,24 +31,17 @@ const AulaCheckBox = () => {
       />
       Aceite os termos
       <h2>Cores</h2>
-      <label>
-        <input
-          type="checkbox"
-          checked={cores.includes("vermelho")}
-          value="vermelho"
-          onChange={handleChange}
-        />
-        Vermelho
-      </label>
-      <label>
-        <input
-          type="checkbox"
-          value="azul"
-          checked={checkColor("azul")}
-          onChange={handleChange}
-        />
-        Azul
-      </label>
+      {coresArray.map((cor) => (
+        <label key={cor}>
+          <input
+            type="checkbox"
+            checked={checkColor(cor)}
+            value={cor}
+            onChange={handleChange}
+          />
+          {cor}
+        </label>
+      ))}
     </form>
   );
 };
