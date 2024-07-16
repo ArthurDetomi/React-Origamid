@@ -1,8 +1,9 @@
-import AppInp from "./components/inputComponente/AppInp";
+import AppForm from "./components/inputComponente/AppForm";
+
 function App() {
   return (
     <div>
-      <AppInp />
+      <AppForm />
     </div>
   );
 }
