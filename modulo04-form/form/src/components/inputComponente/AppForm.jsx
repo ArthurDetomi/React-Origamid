@@ -1,12 +1,11 @@
 import React from "react";
-import Input from "./Input";
 import Select from "./Select";
 import Radio from "./Radio";
 import CheckBox from "./CheckBox";
 
 const AppForm = () => {
-  const [nome, setNome] = React.useState("");
-  const [email, setEmail] = React.useState("");
+  // const [nome, setNome] = React.useState("");
+  //const [email, setEmail] = React.useState("");
   const [produto, setProduto] = React.useState("");
   const [carro, setCarro] = React.useState("");
   const [fruta, setFruta] = React.useState("");

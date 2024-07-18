@@ -8,13 +8,10 @@ const Validacao = () => {
   function validateCep(cep = "") {
     if (cep.length === 0) {
       setError("Preencha um valor");
-      return false;
     } else if (!/^\d{5}?-\d{3}$/.test(cep)) {
       setError("Preencha um cep valido");
-      return false;
     } else {
       setError(null);
-      return true;
     }
   }
 
@@ -29,8 +26,17 @@ const Validacao = () => {
     setCep(target.value);
   }
 
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (error) {
+      alert("Não enviou");
+    } else {
+      alert("Enviou");
+    }
+  }
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <Input
         label="Cep"
         id="cep"
@@ -42,6 +48,8 @@ const Validacao = () => {
         onBlur={handleBlur}
       />
       {error && error}
+      <br></br>
+      <button>Enviar</button>
     </form>
   );
 };
