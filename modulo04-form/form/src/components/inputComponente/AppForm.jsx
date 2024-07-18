@@ -40,6 +40,7 @@ const AppForm = () => {
         options={["Smarthphone", "Tablet", "Notebook", "Monitor"]}
         required
       />
+      {/*
       <Input
         label="Nome:"
         id="nome"
@@ -55,7 +56,7 @@ const AppForm = () => {
         setValue={setEmail}
         type="email"
         required
-      />
+      />*/}
 
       <button>Enviar</button>
     </form>

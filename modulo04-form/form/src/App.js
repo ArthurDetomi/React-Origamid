@@ -1,9 +1,9 @@
-import AppForm from "./components/inputComponente/AppForm";
+import Validacao from "./components/inputComponente/Validacao";
 
 function App() {
   return (
     <div>
-      <AppForm />
+      <Validacao />
     </div>
   );
 }
