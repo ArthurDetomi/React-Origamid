@@ -1,9 +1,10 @@
+import AppFormDois from "./components/inputComponente/UseForm/AppFormDois";
 import Validacao from "./components/inputComponente/Validacao";
 
 function App() {
   return (
     <div>
-      <Validacao />
+      <AppFormDois />
     </div>
   );
 }
