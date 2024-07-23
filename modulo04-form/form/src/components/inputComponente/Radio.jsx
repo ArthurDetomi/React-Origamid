@@ -1,6 +1,6 @@
 import React from "react";
 
-const Radio = ({ options = [], value, setValue, ...props }) => {
+const Radio = ({ options = [], value, ...props }) => {
   return (
     <>
       {options.map((option) => (
@@ -9,7 +9,6 @@ const Radio = ({ options = [], value, setValue, ...props }) => {
             type="radio"
             value={option}
             checked={value === option}
-            onChange={(e) => setValue(e.target.value)}
             {...props}
           />
           {option}
