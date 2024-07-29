@@ -1,0 +1,9 @@
+.container {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.text {
+  font-weight: bold;
+  color: blueviolet;
+}

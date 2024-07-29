@@ -1,0 +1,8 @@
+h1 {
+  color: tomato;
+}
+
+h1.Title {
+  font-family: serif;
+  color: green;
+}
