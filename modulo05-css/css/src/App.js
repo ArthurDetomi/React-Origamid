@@ -1,10 +1,10 @@
 import "./App.css";
-import AppModule from "./components/modules/AppModule";
+import AppStyled from "./components/styled/AppStyled";
 
 function App() {
   return (
     <div className="container">
-      <AppModule />
+      <AppStyled />
     </div>
   );
 }
