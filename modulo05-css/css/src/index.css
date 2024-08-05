@@ -108,3 +108,16 @@ hr {
   border: 2px solid black;
   margin: 2rem auto;
 }
+
+.animeLeft {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animeLeft 0.3s forwards;
+}
+
+@keyframes animeLeft {
+  to {
+    opacity: initial;
+    transform: initial;
+  }
+}
