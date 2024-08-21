@@ -1,11 +1,11 @@
 import "./App.css";
-import AppAnimacao from "./components/animacao/AppAnimacao";
-import ComponenteBoot from "./components/frameworks/ComponenteBoot";
+
+import AppImagens from "./components/imagens/AppImagens";
 
 function App() {
   return (
     <div className="container">
-      <AppAnimacao />
+      <AppImagens />
     </div>
   );
 }
